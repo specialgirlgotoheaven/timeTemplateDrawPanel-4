@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>时间模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="timeTemplateDrawPanel.css"/>
+    <link rel="stylesheet" type="text/css" href="tools/jquery.ui.all.css">
+    <link rel="stylesheet" type="text/css" href="tools/jquery.ui.dialog.min.css"/>
+
+    <script type="text/javascript" src="tools/jquery-1.11.2.min.js"></script>
+    <script src="tools/jquery.ui.core.min.js"></script>
+    <script src="tools/jquery.ui.widget.min.js"></script>
+    <script src="tools/jquery.ui.mouse.min.js"></script>
+    <script src="tools/jquery.ui.button.min.js"></script>
+    <script src="tools/jquery.ui.draggable.min.js"></script>
+    <script src="tools/jquery.ui.position.min.js"></script>
+    <script src="tools/jquery.ui.resizable.min.js"></script>
+    <script src="tools/jquery.ui.button.min.js"></script>
+    <script src="tools/jquery.ui.dialog.min.js"></script>
+    <script src="tools/jquery.ui.effect.min.js"></script>
+
+    <script type="text/javascript" src="timeTemplateDrawPanel.js"></script>
+
+</head>
+<body>
+<div class="timeSetContainer">
+    <div id="timeRuler" style="margin-left: 68px;font-size: 10px;margin-bottom: -12px">
+        <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_1">
+        <div class="daysTitle" >星期一</div>
+        <ul class="timesetul">
+             <li class="sliderli normalRecord firstLiNeedTop">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                     <span class="normalRecordHead"></span>
+                     <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-top: 1px solid #aaa ;border-left: 1px solid #aaa;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="01:00:00-01:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="02:00:00-02:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="03:00:00-03:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="04:00:00-04:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="05:00:00-05:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="06:00:00-06:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="07:00:00-07:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="08:00:00-08:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="09:00:00-09:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="10:00:00-10:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="11:00:00-11:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="12:00:00-12:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="13:00:00-13:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="14:00:00-14:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="15:00:00-15:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="16:00:00-16:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="17:00:00-17:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="18:00:00-18:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="19:00:00-19:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="20:00:00-20:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="21:00:00-21:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="22:00:00-22:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+                     <span class="cell cellClearColor" data-value="23:00:00-23:59:59" style="border-top: 1px solid #aaa ;"><b></b></span>
+             </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                    <span class="dynamicDetectRecordHead"></span>
+                    <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                    <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                    <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+        </ul>
+        <div class="timesetButton">设置</div>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_2">
+        <div class="daysTitle">星期二</div>
+        <ul class="timesetul">
+            <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="normalRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="dynamicDetectRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+        </ul>
+
+        <div class="timesetButton">设置</div>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_3">
+        <div class="daysTitle">星期三</div>
+        <ul class="timesetul">
+            <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="normalRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="dynamicDetectRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+        </ul>
+        <div class="timesetButton">设置</div>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_4">
+        <div  class="daysTitle" >星期四</div>
+        <ul class="timesetul">
+            <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="normalRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="dynamicDetectRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+        </ul>
+        <div class="timesetButton" >设置</div>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_5">
+        <div class="daysTitle">星期五</div>
+        <ul class="timesetul">
+            <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="normalRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="dynamicDetectRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+        </ul>
+
+        <div class="timesetButton">设置</div>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_6">
+        <div class="daysTitle">星期六</div>
+        <ul class="timesetul">
+            <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="normalRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="dynamicDetectRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+        </ul>
+        <div class="timesetButton">设置</div>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_7">
+        <div class="daysTitle" >星期日</div>
+        <ul class="timesetul">
+            <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="normalRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="dynamicDetectRecordHead"></span>
+                <span class="cell cellClearColor" data-value="00:00:00-00:59:59" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell cellClearColor" data-value="01:00:00-01:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="02:00:00-02:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="03:00:00-03:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="04:00:00-04:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="05:00:00-05:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="06:00:00-06:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="07:00:00-07:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="08:00:00-08:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="09:00:00-09:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="10:00:00-10:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="11:00:00-11:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="12:00:00-12:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="13:00:00-13:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="14:00:00-14:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="15:00:00-15:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="16:00:00-16:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="17:00:00-17:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="18:00:00-18:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="19:00:00-19:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="20:00:00-20:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="21:00:00-21:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="22:00:00-22:59:59"><b></b></span>
+                <span class="cell cellClearColor" data-value="23:00:00-23:59:59"><b></b></span>
+            </li>
+        </ul>
+        <div class="timesetButton" >设置</div>
+    </div>
+</div>
+
+<div id="setTimeDialog" style="display: none">
+    <div class="theTimeSetInDialog">
+        <input id="DialogFirstLineStart" data-input="time" required="required"/>—<input id="DialogFirstLineEnd" data-input="time" required="required" /><button class="setTimeDialogAdd">添加</button> <button id="firstDialogLineEmpty">清空</button>
+        <input type="checkbox"/>普通  <input type="checkbox" />动检
+    </div>
+    <div id="setTimeDialogDiv" class="theTimeSetInDialog theTimeSetInDialogClone" style="display: none">
+        <input data-input="time" id="cloneTimeInput1" required="required"/>—<input data-input="time" id="cloneTimeInput2" required="required"/><button class="setTimeDialogAdd">添加</button> <button class="setTimeDialogDelete">删除</button>
+        <input type="checkbox" id="cloneCheckbox1"/>普通  <input type="checkbox" id="cloneCheckbox2" />动检
+    </div>
+</div>
+</body>
+</html>
+
+        <!--
+                    <span class="cell" data-value="00:00:00-01:00:00" style="border-left: 1px solid #aaa;"><b></b></span>
+                    <span class="cell" data-value="01:00:00-02:00:00"><b></b></span>
+                    <span class="cell" data-value="02:00:00-03:00:00"><b></b></span>
+                    <span class="cell" data-value="03:00:00-04:00:00"><b></b></span>
+                    <span class="cell" data-value="04:00:00-05:00:00"><b></b></span>
+                    <span class="cell" data-value="05:00:00-06:00:00"><b></b></span>
+                    <span class="cell" data-value="06:00:00-07:00:00"><b></b></span>
+                    <span class="cell" data-value="07:00:00-08:00:00"><b></b></span>
+                    <span class="cell" data-value="08:00:00-09:00:00"><b></b></span>
+                    <span class="cell" data-value="09:00:00-10:00:00"><b></b></span>
+                    <span class="cell" data-value="10:00:00-11:00:00"><b></b></span>
+                    <span class="cell" data-value="11:00:00-12:00:00"><b></b></span>
+                    <span class="cell" data-value="12:00:00-13:00:00"><b></b></span>
+                    <span class="cell" data-value="13:00:00-14:00:00"><b></b></span>
+                    <span class="cell" data-value="14:00:00-15:00:00"><b></b></span>
+                    <span class="cell" data-value="15:00:00-16:00:00"><b></b></span>
+                    <span class="cell" data-value="16:00:00-17:00:00"><b></b></span>
+                    <span class="cell" data-value="17:00:00-18:00:00"><b></b></span>
+                    <span class="cell" data-value="18:00:00-19:00:00"><b></b></span>
+                    <span class="cell" data-value="19:00:00-20:00:00"><b></b></span>
+                    <span class="cell" data-value="20:00:00-21:00:00"><b></b></span>
+                    <span class="cell" data-value="21:00:00-22:00:00"><b></b></span>
+                    <span class="cell" data-value="22:00:00-23:00:00"><b></b></span>
+                    <span class="cell" data-value="23:00:00-24:00:00"><b></b></span>
+        -->

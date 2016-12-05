@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>时间模板</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="timeTemplateDrawPanel.css"/>
+    <link rel="stylesheet" type="text/css" href="tools/jquery.ui.all.css">
+    <link rel="stylesheet" type="text/css" href="tools/jquery.ui.dialog.min.css"/>
+
+    <script type="text/javascript" src="tools/jquery-1.11.2.min.js"></script>
+    <script src="tools/jquery.ui.core.min.js"></script>
+    <script src="tools/jquery.ui.widget.min.js"></script>
+    <script src="tools/jquery.ui.mouse.min.js"></script>
+    <script src="tools/jquery.ui.button.min.js"></script>
+    <script src="tools/jquery.ui.draggable.min.js"></script>
+    <script src="tools/jquery.ui.position.min.js"></script>
+    <script src="tools/jquery.ui.resizable.min.js"></script>
+    <script src="tools/jquery.ui.button.min.js"></script>
+    <script src="tools/jquery.ui.dialog.min.js"></script>
+    <script src="tools/jquery.ui.effect.min.js"></script>
+
+    <script type="text/javascript" src="timeTemplateDrawPanel.js"></script>
+
+</head>
+<body>
+<div class="timeSetContainer">
+    <div class="timeSetContent" id="timeSetContent_1">
+        <div id="a_day1L" class="daysTitle" >星期一</div>
+        <ul class="timesetul">
+             <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                     <span class="normalRecordHead"></span>
+                     <span class="cell" data-value="00:00:00-01:00:00" style="border-left: 1px solid #aaa;"><b></b></span>
+                     <span class="cell" data-value="01:00:00-02:00:00"><b></b></span>
+                     <span class="cell" data-value="02:00:00-03:00:00"><b></b></span>
+                     <span class="cell" data-value="03:00:00-04:00:00"><b></b></span>
+                     <span class="cell" data-value="04:00:00-05:00:00"><b></b></span>
+                     <span class="cell" data-value="05:00:00-06:00:00"><b></b></span>
+                     <span class="cell" data-value="06:00:00-07:00:00"><b></b></span>
+                     <span class="cell" data-value="07:00:00-08:00:00"><b></b></span>
+                     <span class="cell" data-value="08:00:00-09:00:00"><b></b></span>
+                     <span class="cell" data-value="09:00:00-10:00:00"><b></b></span>
+                     <span class="cell" data-value="10:00:00-11:00:00"><b></b></span>
+                     <span class="cell" data-value="11:00:00-12:00:00"><b></b></span>
+                     <span class="cell" data-value="12:00:00-13:00:00"><b></b></span>
+                     <span class="cell" data-value="13:00:00-14:00:00"><b></b></span>
+                     <span class="cell" data-value="14:00:00-15:00:00"><b></b></span>
+                     <span class="cell" data-value="15:00:00-16:00:00"><b></b></span>
+                     <span class="cell" data-value="16:00:00-17:00:00"><b></b></span>
+                     <span class="cell" data-value="17:00:00-18:00:00"><b></b></span>
+                     <span class="cell" data-value="18:00:00-19:00:00"><b></b></span>
+                     <span class="cell" data-value="19:00:00-20:00:00"><b></b></span>
+                     <span class="cell" data-value="20:00:00-21:00:00"><b></b></span>
+                     <span class="cell" data-value="21:00:00-22:00:00"><b></b></span>
+                     <span class="cell" data-value="22:00:00-23:00:00"><b></b></span>
+                     <span class="cell" data-value="23:00:00-24:00:00"><b></b></span>
+             </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                    <span class="dynamicDetectRecordHead"></span>
+                    <span class="cell" data-value="00:00:00-01:00:00" style="border-left: 1px solid #aaa;"><b></b></span>
+                    <span class="cell" data-value="01:00:00-02:00:00"><b></b></span>
+                    <span class="cell" data-value="02:00:00-03:00:00"><b></b></span>
+                    <span class="cell" data-value="03:00:00-04:00:00"><b></b></span>
+                    <span class="cell" data-value="04:00:00-05:00:00"><b></b></span>
+                    <span class="cell" data-value="05:00:00-06:00:00"><b></b></span>
+                    <span class="cell" data-value="06:00:00-07:00:00"><b></b></span>
+                    <span class="cell" data-value="07:00:00-08:00:00"><b></b></span>
+                    <span class="cell" data-value="08:00:00-09:00:00"><b></b></span>
+                    <span class="cell" data-value="09:00:00-10:00:00"><b></b></span>
+                    <span class="cell" data-value="10:00:00-11:00:00"><b></b></span>
+                    <span class="cell" data-value="11:00:00-12:00:00"><b></b></span>
+                    <span class="cell" data-value="12:00:00-13:00:00"><b></b></span>
+                    <span class="cell" data-value="13:00:00-14:00:00"><b></b></span>
+                    <span class="cell" data-value="14:00:00-15:00:00"><b></b></span>
+                    <span class="cell" data-value="15:00:00-16:00:00"><b></b></span>
+                    <span class="cell" data-value="16:00:00-17:00:00"><b></b></span>
+                    <span class="cell" data-value="17:00:00-18:00:00"><b></b></span>
+                    <span class="cell" data-value="18:00:00-19:00:00"><b></b></span>
+                    <span class="cell" data-value="19:00:00-20:00:00"><b></b></span>
+                    <span class="cell" data-value="20:00:00-21:00:00"><b></b></span>
+                    <span class="cell" data-value="21:00:00-22:00:00"><b></b></span>
+                    <span class="cell" data-value="22:00:00-23:00:00"><b></b></span>
+                    <span class="cell" data-value="23:00:00-24:00:00"><b></b></span>
+            </li>
+        </ul>
+        <div class="timesetButton" id="monSet">设置</div>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_2">
+        <div class="daysTitle">星期二</div>
+        <ul class="timesetul">
+            <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="normalRecordHead"></span>
+                <span class="cell" data-value="" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+            </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="dynamicDetectRecordHead"></span>
+                <span class="cell" data-value="" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+            </li>
+        </ul>
+
+        <div class="timesetButton">设置</div>
+    </div>
+    <div class="timeSetContent" id="timeSetContent_3">
+        <div class="daysTitle">星期三</div>
+        <ul class="timesetul">
+            <li class="sliderli normalRecord">    <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="normalRecordHead"></span>
+                <span class="cell" data-value="" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+            </li>
+            <li class="sliderli dynamicDetectRecord">  <!--style="width: 900px;border-left: 1px solid #aaa;border-right: 1px solid #aaa;"-->
+                <span class="dynamicDetectRecordHead"></span>
+                <span class="cell" data-value="" style="border-left: 1px solid #aaa;"><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+                <span class="cell" data-value=""><b></b></span>
+            </li>
+        </ul>
+        <div class="timesetButton">设置</div>
+    </div>
+</div>
+
+
+<div id="setTimeDialog" style="display: none">
+    <div class="theTimeSetInDialog">
+        <input type="time" />—<input type="time"/><button class="setTimeDialogAdd">添加</button>
+        <input type="checkbox"/>普通  <input type="checkbox" />动检
+    </div>
+    <div id="setTimeDialogDiv" class="theTimeSetInDialog theTimeSetInDialogClone" style="display: none">
+        <input type="time" />—<input type="time"/><button class="setTimeDialogAdd">添加</button> <button class="setTimeDialogDelete">删除</button>
+        <input type="checkbox"/>普通  <input type="checkbox" />动检
+    </div>
+</div>
+
+
+
+</body>
+</html>

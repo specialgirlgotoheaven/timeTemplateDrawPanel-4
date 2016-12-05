@@ -1,0 +1,128 @@
+@charset "utf-8";
+.timeSetContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    -moz-user-select:none; /* 去除默认选中，有蓝底 */
+    -webkit-user-select:none;/* 去除默认选中，有蓝底 */
+    -ms-user-select:none;/* 去除默认选中，有蓝底 */
+    -khtml-user-select:none;/* 去除默认选中，有蓝底 */
+    user-select:none;/* 去除默认选中，有蓝底 */
+}
+.timeSetContent{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 32px;   /*该高度是li的总和+border的像素值*/
+}
+.daysTitle{
+    /*    flex: 1;*/
+    width: 50px;
+    cursor: pointer;
+    /*    height:30px;*/
+    /*    display: block;
+        float: left;
+        position: relative;*/
+}
+.timesetButton{
+    width: 50px;
+    cursor: pointer;
+    /*    height:30px;*/
+    /*    flex: 2;*/
+    /*    display: block;
+        float: left;
+        position: relative;*/
+}
+.timesetul{
+    padding-left:0;
+    /*    height:30px;*/
+    /*    display: block;
+        float: left;
+        position: relative;*/
+}
+
+.timesetul li{
+    list-style:none;
+    height:15px;
+    clear: both;
+}
+/*.timesetul li span{
+    display: inline-block;
+}*/
+
+.normalRecord .cell{
+    border-top: 1px solid #aaa;
+}
+
+.normalRecordHead{
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+    border:none;
+    float:left;
+    background-color:greenyellow ;
+}
+.dynamicDetectRecordHead{
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+    border:none;
+    float:left;
+    background-color:yellow ;
+}
+.timesetul li .cell{
+    width: 30px;
+    height:15px;
+    /*    line-height:30px;*/
+    float:left;
+    display:inline-block;
+    border-right:1px solid #aaa;
+    border-bottom:1px solid #aaa;
+    /*    border-top:1px solid #aaa;*/
+    /*    z-index:auto !important;*/
+}
+.timesetul li .cell b{
+    display: inline-block;
+    height: 100%;
+}
+.cellYellow{
+    background-color: yellow;
+    cursor: url("images/eraser.ico") 8 8,auto
+}
+.cellGreen{
+    background-color: greenyellow;
+    cursor: url("images/eraser.ico") 8 8,auto
+}
+.cellClearColor{
+    background-color: #FFFFFF;
+}
+/*span{
+    cursor: url("tools/pen.ico"),auto;
+}*/
+#timeRuler span{
+    display: inline-block;
+    width: 31px;
+    margin-bottom: -12px;
+}
+/*
+.firstLiNeedTop:nth-child(n+2) {
+    border-top: 1px solid #aaa;
+}*/
+/*
+.normalRecord .cell{
+    border-top: 1px solid #aaa !important;
+}*/
+#test{
+    width: 200px;
+    height: 200px;
+    background: url("images/icons.png");
+    background-position: 0px 0px;
+}
+.normalRecord .cellClearColor{
+    cursor: url("images/pen_green.ico") 8 8,auto;
+}
+.dynamicDetectRecord .cellClearColor{
+    cursor: url("images/pen_yellow.ico") 8 8,auto;;
+}
